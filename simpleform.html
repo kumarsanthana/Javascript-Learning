@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test1</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            font-size: 18px;
+        }
+        .container{
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .form-inner{
+            width: 100%;
+            margin: 20px 0;
+            display: flex;
+        }
+        .form-inner label{
+            width: 30%;
+            display: inline-block;
+        }
+        .form-inner input{
+            width: 65%;
+            padding:10px 0;
+        }
+        .form-inner textarea{
+            width: 65%;
+            height: 100px;
+        }
+        .form-inner-btn{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/action_page.php">
+            <div class="form-inner">
+                <label>First Name*</label>
+                <input type="text" name="first_name">
+            </div>
+            <div class="form-inner">
+                <label>Last Name*</label>
+                <input type="text" name="last_name">
+            </div>
+            <div class="form-inner">
+                <label>Email Address*</label>
+                <input type="email" name="email_address">
+            </div>
+            <div class="form-inner">
+                <label>Telephone Number</label>
+                <input type="tel" name="phone_numer">
+            </div>
+            <div class="form-inner">
+                <label>Comments*</label>
+                <textarea name="comments"></textarea>
+            </div>
+            <div class="form-inner-btn">
+                <button type="submit" onclick="alert('Thank You!')" value="submit">submit form</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
